@@ -101,28 +101,28 @@ void quicksortMediana1( int v[], int esq, int dir){
 
 
 
-void quicks(int v[], int esq, int dir, int escolha = 1){
-    int x;
+// void quicks(int v[], int esq, int dir, int escolha = 1){
+//     int x;
 
-    switch (escolha){
-        case 1:
-            quicksortInicio(v, esq, dir); // primeiro
-        break;
+//     switch (escolha){
+//         case 1:
+//             quicksortInicio(v, esq, dir); // primeiro
+//         break;
 
-        case 2:
-            quicksortFinal(v, esq, dir); // ultimo
-        break;
+//         case 2:
+//             quicksortFinal(v, esq, dir); // ultimo
+//         break;
 
-        case 3:
-            quicksortMediana1(v, esq, dir); // mediana
-        break;
+//         case 3:
+//             quicksortMediana1(v, esq, dir); // mediana
+//         break;
 
-        case 4:
-            quicksortMediana2(v, esq, dir); // mediana dos 3
-        break;
+//         case 4:
+//             quicksortMediana2(v, esq, dir); // mediana dos 3
+//         break;
 
-        default:
-            quicksortMediana1(v, esq, dir);
-        break;
-    }
-}
+//         default:
+//             quicksortMediana1(v, esq, dir);
+//         break;
+//     }
+// }
