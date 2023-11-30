@@ -29,7 +29,7 @@ int main(){
     double mediaShell2 = 0;
     double mediaShell3 = 0;
 
-    while(count < 1){ // antes era 30, mas todas as informacoes nao caberiam no terminal
+    while(count < 1){ // o certo seria 30, mas todas as informacoes nao caberiam no terminal
 
     //Muitas linhas estao comentadas, para que seja mais facil e mais rapido pegar o dados obtidos no terminal(estao em microsegundos)
     //Para mudar o método escolhido, apenas mude o metodo entre as variaveis begin e end, caso queira ver os vetores também sendo ordenados, descomente as outras linhas conforme suas necessidade
@@ -44,7 +44,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     quicksortInicio(vetor, 0, TAM1-1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaPivoI = mediaPivoI + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
@@ -58,7 +58,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     quicksortFinal(vetor, 0, TAM1-1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaPivoF = mediaPivoF + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
@@ -72,7 +72,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     quicksortMediana1(vetor, 0, TAM1-1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaPivoM1 = mediaPivoM1 + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
@@ -86,7 +86,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     quicksortMediana2(vetor, 0, TAM1-1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaPivoM2 = mediaPivoM2 + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
@@ -101,7 +101,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     shellsort(vetor, TAM1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaShell1 = mediaShell1 + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
@@ -115,7 +115,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     shellsort2(vetor, TAM1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaShell2 = mediaShell2 + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
@@ -129,7 +129,7 @@ int main(){
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     shellsort3(vetor, TAM1);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << std::endl;
     mediaShell3 = mediaShell3 + std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 
     count2++;
